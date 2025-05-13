@@ -15,7 +15,6 @@ Tecanuncios es una plataforma web diseñada para gestionar y mostrar anuncios de
 - Frontend: React.js
 - Backend: Django
 
-
 ## 📋 Requisitos Previos
 
 - Python (v3.8 o superior)
@@ -28,20 +27,16 @@ Tecanuncios es una plataforma web diseñada para gestionar y mostrar anuncios de
 1. Clonar el repositorio:
 ```bash
 git clone https://github.com/robbiebriceno/tecanuncios.git
-```
 
-
-
-3. Instalar dependencias del backend:
-```bash
+2. Instalar dependencias del backend:
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
-```
 
+3. Aplicar migraciones de base de datos:
+python manage.py migrate
 
-
-5. Iniciar los servidores:
+4. Iniciar los servidores:
 ```bash
 # Terminal 1 (Backend)
 python manage.py runserver
